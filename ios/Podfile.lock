@@ -1,4 +1,11 @@
 PODS:
+  - AppInfoPackage (0.0.1):
+    - RCT-Folly
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Codegen
+    - React-Core
+    - ReactCommon/turbomodule/core
   - boost (1.76.0)
   - CocoaAsyncSocket (7.6.5)
   - DoubleConversion (1.1.6)
@@ -754,6 +761,7 @@ PODS:
     - Yoga (~> 1.14)
 
 DEPENDENCIES:
+  - AppInfoPackage (from `../app-info-package`)
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
@@ -838,6 +846,8 @@ SPEC REPOS:
     - YogaKit
 
 EXTERNAL SOURCES:
+  AppInfoPackage:
+    :path: "../app-info-package"
   boost:
     :podspec: "../node_modules/react-native/third-party-podspecs/boost.podspec"
   DoubleConversion:
@@ -916,6 +926,7 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  AppInfoPackage: 9144b77d83b06b7f52f11d394d49be4ae5a42c17
   boost: 57d2868c099736d80fcd648bf211b4431e51a558
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: 5189b271737e1565bdce30deb4a08d647e3f5f54
@@ -970,6 +981,6 @@ SPEC CHECKSUMS:
   Yoga: 79dd7410de6f8ad73a77c868d3d368843f0c93e0
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: f79593db25c896c1b189c99d4a7f600e17cbadaa
+PODFILE CHECKSUM: cd81c3eb49ca95a3abdadf36f90a838d627b3b51
 
 COCOAPODS: 1.11.3
